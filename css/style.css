@@ -1,0 +1,79 @@
+@font-face { font-family: 'Libel Suit'; src: url('../assets/fonts/libel-suit-rg.otf') format('opentype'); }
+@font-face { font-family: 'Alte Regular'; src: url('../assets/fonts/AlteHaasGroteskRegular.ttf') format('truetype'); }
+@font-face { font-family: 'Alte Bold'; src: url('../assets/fonts/AlteHaasGroteskBold.ttf') format('truetype'); }
+@font-face { font-family: 'Gontserrat Regular'; src: url('../assets/fonts/Gontserrat-Regular.ttf') format('truetype'); }
+
+:root {
+    --font-family: 'Gontserrat Regular';
+    --spacing: 0.25rem;
+}
+
+/* Pink Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #d81b60;
+  --primary-hover: #c2185b;
+  --primary-focus: rgba(216, 27, 96, 0.125);
+  --primary-inverse: #FFF;
+}
+
+/* Pink Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --primary: #d81b60;
+    --primary-hover: #e91e63;
+    --primary-focus: rgba(216, 27, 96, 0.25);
+    --primary-inverse: #FFF;
+  }
+}
+
+/* Pink Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #d81b60;
+  --primary-hover: #e91e63;
+  --primary-focus: rgba(216, 27, 96, 0.25);
+  --primary-inverse: #FFF;
+}
+
+/* Pink (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}
+
+body {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+}
+
+main img {
+    width: 50%;
+    -webkit-filter: drop-shadow(1px 1px 0 #fff)
+                    drop-shadow(-1px 1px 0 #fff)
+                    drop-shadow(1px -1px 0 #fff)
+                    drop-shadow(-1px -1px 0 #fff);
+
+    filter: drop-shadow(1px 1px 0 #fff)
+            drop-shadow(-1px 1px 0 #fff)
+            drop-shadow(1px -1px 0 #fff)
+            drop-shadow(-1px -1px 0 #fff);
+}
+
+strong {
+    font-family: 'Libel Suit';
+    font-size: 2rem;
+}
+
+h1 {
+    --font-weight: 500;
+    text-align: center;
+}
