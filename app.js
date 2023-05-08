@@ -5,7 +5,7 @@ const PORT = 8000
 
 app.use(cors())
 
-let quotes = {
+const quotes = {
     '001': {
         "author": "Betty White",
         "tag": "Wisest Words",
@@ -709,6 +709,12 @@ let quotes = {
     },
 }
 
+app.use(express.static('./public'));
+
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
+})
+
+app.listen(PORT, () => {
+    console.log('Betty White Quotes API is running!')
 })
