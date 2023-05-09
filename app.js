@@ -711,10 +711,16 @@ const quotes = {
 
 app.use(express.static('./public'));
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
-})
+// app.get('/', (req, res) => {
+//     res.sendFile(__dirname + '/index.html')
+// })
 
-app.listen(PORT, () => {
+
+
+// app.get('/docs', (req, res) => {
+//     res.sendFile(__dirname + '/docs.html')
+// })
+
+app.listen(process.env.PORT, () => {
     console.log('Betty White Quotes API is running!')
 })
