@@ -724,7 +724,7 @@ app.get('/', (req, res) => {
 app.get('/api/:quoteID', (req,res)=>{
     let quoteReq = req.params.quoteID
 
-    if (quoteReq > 0 && quoteReq) {
+    if (quoteReq > 0 && quoteReq < 118) {
         let quoteRes = quoteReq.toString().padStart(3,'0')
         res.json(quotes[quoteRes])
     } else {
