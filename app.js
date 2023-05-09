@@ -731,15 +731,10 @@ app.get('/api/:quoteID', (req,res)=>{
     }
 })
 
-app.get('/api/random', (req,res)=>{
-    const randomQuote = Math.floor(Math.random() * 117) + 1
-    res.json(quotes[randomQuote.toString().padStart(3,'0')])
-})
-
 app.get('/docs', (req, res) => {
     res.sendFile(__dirname + '/docs.html')
 })
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log('Betty White Quotes API is running!')
 })
