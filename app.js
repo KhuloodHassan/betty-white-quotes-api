@@ -724,6 +724,11 @@ app.get('/api/all', (req, res) => {
     res.json(quotes);
 })
 
+app.get('/api/random', (req, res) => {
+    let randomQuote = Math.floor(Math.random() * 117) + 1
+    res.json(quotes[randomQuote]);
+})
+
 app.get('/api/:quoteID', (req,res)=>{
     let quoteReq = req.params.quoteID
 
@@ -733,10 +738,6 @@ app.get('/api/:quoteID', (req,res)=>{
     } else {
         res.json(quotes['out of range'])
     }
-})
-
-app.get('/api/all', (req, res) => {
-    res.json(quotes);
 })
 
 app.get('/docs', (req, res) => {
