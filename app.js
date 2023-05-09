@@ -715,7 +715,12 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
+app.get('/api/:quoteID', (req,res)=>{
 
+    const quoteFetched = req.params.quoteID
+    
+    res.json(quotes[quoteFetched])
+})
 
 app.get('/docs', (req, res) => {
     res.sendFile(__dirname + '/docs.html')
