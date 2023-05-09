@@ -722,10 +722,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/:quoteID', (req,res)=>{
-    const quoteFetched = req.params.quoteID.toString().padStart(3,'0')
+    let quoteReq = req.params.quoteID
 
-    if (quotes[quoteFetched] > 0 && quotes[quoteFetched]) {
-        res.json(quotes[quoteFetched])
+    if (quoteReq > 0 && quoteReq) {
+        let quoteRes = quoteReq.toString().padStart(3,'0')
+        res.json(quotes[quoteRes])
     } else {
         res.json(quotes['out of range'])
     }
