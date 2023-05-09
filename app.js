@@ -723,7 +723,7 @@ app.get('/', (req, res) => {
 
 app.get('/api/all', (req, res) => {
     res.json(quotes);
-});
+})
 
 app.get('/api/:quoteID', (req,res)=>{
     let quoteReq = req.params.quoteID
@@ -738,7 +738,7 @@ app.get('/api/:quoteID', (req,res)=>{
 
 app.get('/api/all', (req, res) => {
     res.json(quotes);
-});
+})
 
 app.get('/docs', (req, res) => {
     res.sendFile(__dirname + '/docs.html')
