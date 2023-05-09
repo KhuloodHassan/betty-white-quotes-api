@@ -707,6 +707,12 @@ const quotes = {
         "tag": "Aging",
         "quote": "You're never too old for anything."
     },
+
+    'out of range': {
+        "author": "Betty White Quote API",
+        "tag": "Error 404",
+        "quote": "Quote not found. IDs range from 1-117. Please try again."
+    }
 }
 
 app.use(express.static('./public'));
@@ -716,10 +722,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/:quoteID', (req,res)=>{
-
     const quoteFetched = req.params.quoteID.toString().padStart(3,'0')
-    
-    res.json(quotes[quoteFetched])
+
+    if (quotes[quoteFetched] > 0 && quotes[quoteFetched] < 118) {
+        res.json(quotes[quoteFetched])
+    } else {
+        res.json(quotes['out of range'])
+    }
 })
 
 app.get('/docs', (req, res) => {
