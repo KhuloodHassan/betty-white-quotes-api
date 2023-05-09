@@ -731,15 +731,18 @@ app.get('/api/:quoteID', (req,res)=>{
         res.json(quotes['out of range'])
     }
 })
-
+/*
 app.get('/api/:all', (req,res)=>{
     let quoteAll = req.params.all
     
     if (quoteAll === 'all') {
         res.json(quotes)
     }
-    
 })
+*/
+app.get('/api/all', (req, res) => {
+    res.json(quotes);
+  });
 
 app.get('/docs', (req, res) => {
     res.sendFile(__dirname + '/docs.html')
