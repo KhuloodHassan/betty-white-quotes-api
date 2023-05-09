@@ -724,7 +724,7 @@ app.get('/', (req, res) => {
 app.get('/api/:quoteID', (req,res)=>{
     const quoteFetched = req.params.quoteID.toString().padStart(3,'0')
 
-    if (quoteID > 0 && quoteID < 118) {
+    if (quotes[quoteFetched] > 0 && quotes[quoteFetched]) {
         res.json(quotes[quoteFetched])
     } else {
         res.json(quotes['out of range'])
@@ -735,6 +735,6 @@ app.get('/docs', (req, res) => {
     res.sendFile(__dirname + '/docs.html')
 })
 
-app.listen(process.env.PORT || 8000, () => {
+app.listen(process.env.PORT, () => {
     console.log('Betty White Quotes API is running!')
 })
