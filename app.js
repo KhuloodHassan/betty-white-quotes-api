@@ -732,6 +732,11 @@ app.get('/api/:quoteID', (req,res)=>{
     }
 })
 
+app.get('/api/all', (req,res)=>{
+    
+    res.json(quotes)
+})
+
 app.get('/docs', (req, res) => {
     res.sendFile(__dirname + '/docs.html')
 })
