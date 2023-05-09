@@ -46,6 +46,8 @@
   --switch-checked-background-color: var(--primary);
 }
 
+/* Index */
+
 body {
     max-width: 920px;
     margin: 0 auto;
@@ -55,7 +57,7 @@ main {
     text-align: center;
 }
 
-main img {
+.index-main img {
     width: 50%;
     -webkit-filter: drop-shadow(1px 1px 0 #fff)
                     drop-shadow(-1px 1px 0 #fff)
@@ -77,3 +79,12 @@ h1 {
     --font-weight: 500;
     text-align: center;
 }
+
+/* Docs */
+
+/* Random */
+
+.random-main img {
+    width: 60%;
+}
+

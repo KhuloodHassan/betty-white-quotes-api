@@ -720,6 +720,14 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
+app.get('/random', (req, res) => {
+    res.sendFile(__dirname + '/random.html')
+})
+
+app.get('/docs', (req, res) => {
+    res.sendFile(__dirname + '/docs.html')
+})
+
 app.get('/api/all', (req, res) => {
     res.json(quotes);
 })
@@ -740,10 +748,6 @@ app.get('/api/:quoteID', (req,res)=>{
     }
 })
 
-app.get('/docs', (req, res) => {
-    res.sendFile(__dirname + '/docs.html')
-})
-
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log('Betty White Quotes API is running!')
 })

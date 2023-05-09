@@ -22,7 +22,7 @@
             </ul>
             <ul>
               <li><a href="/">About</a></li>
-              <li><a href="#">Random Quote</a></li>
+              <li><a href="/random">Random Quote</a></li>
               <li><a href="/docs">Docs</a></li>
             </ul>
         </nav>
@@ -50,11 +50,28 @@
 
         <h3>Fetch a random quote</h3>
         <p>
-            <code>link goes here</code> fetch a random quote.
+            <code>GET https://bettywhite.cyclic.app/api/random</code> fetch a random quote.
         </p>
-        <p>Fetching a random quote as JSON</p>
+
+        <h3>Fetch a quote by id</h3>
+        <p>
+            <code>GET https://bettywhite.cyclic.app/api/{id}</code> fetch a quote by id. id's range from 1 to 117.
+        </p>
+
+        <h3>Fetch all quotes</h3>
+        <p>
+            <code>GET https://bettywhite.cyclic.app/api/all</code> fetch all quotes.
+        </p>
+
+        <h3>Quote Output</h3>
         <pre>
-            <code>code block here</code>
+            <code>
+                {
+                    "author": "Betty White",
+                    "tag": "Humor",
+                    "quote": "I'm a health nut. My favorite food is hot dogs with French fries. And my exercise: I have a two-story house and a very bad memory, so I'm up and down those stairs."
+                }
+            </code>
         </pre>
 
         <h2>Rate Limiting</h2>
@@ -64,9 +81,10 @@
         <p>If you use the Betty White Quotes API in your project or application, we ask that you include attribution to Betty White as the source of the quotes.</p>
         <p>Here's an example of how you could include attribution in your project:</p>
 
-        <pre>
-            <code>code block here</code>
-        </pre>
+        <blockquote>
+            <p>"I may be a senior, but so what? I'm still hot."</p>
+            <footer>- Betty White</footer>
+        </blockquote>
 
         <h2>Support</h2>
         <p>If you have any questions or issues with the API, please contact us at <a href="githublink">GitHub</a>. We're always happy to help!</p>
