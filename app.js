@@ -733,7 +733,7 @@ app.get('/api/:quoteID', (req,res)=>{
 
 app.get('/api/:random', (req,res)=>{
     const random = Math.floor(Math.random() * 117) + 1
-    res.json(quotes[random.toString()])
+    res.json(quotes[random.toString().padStart(3,'0')])
 })
 
 app.get('/docs', (req, res) => {
