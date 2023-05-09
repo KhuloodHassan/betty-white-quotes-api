@@ -717,9 +717,9 @@ app.get('/', (req, res) => {
 
 
 
-// app.get('/docs', (req, res) => {
-//     res.sendFile(__dirname + '/docs.html')
-// })
+app.get('/docs', (req, res) => {
+    res.sendFile(__dirname + '/docs.html')
+})
 
 app.listen(process.env.PORT, () => {
     console.log('Betty White Quotes API is running!')
