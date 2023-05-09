@@ -741,7 +741,8 @@ app.get('/api/:all', (req,res)=>{
 })
 */
 app.get('/api/all', (req, res) => {
-    res.json(quotes);
+    const allQuotes = Object.values(quotes);
+  res.json(allQuotes);
   });
 
 app.get('/docs', (req, res) => {
