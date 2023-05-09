@@ -732,9 +732,13 @@ app.get('/api/:quoteID', (req,res)=>{
     }
 })
 
-app.get('/api/all', (req,res)=>{
+app.get('/api/:all', (req,res)=>{
+    let quoteAll = req.params.all
     
-    res.json(quotes)
+    if (quoteAll === 'all') {
+        res.json(quotes)
+    }
+    
 })
 
 app.get('/docs', (req, res) => {
