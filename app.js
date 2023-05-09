@@ -717,7 +717,7 @@ app.get('/', (req, res) => {
 
 app.get('/api/:quoteID', (req,res)=>{
 
-    const quoteFetched = req.params.quoteID
+    const quoteFetched = req.params.quoteID.toString().padStart(3,'0')
     
     res.json(quotes[quoteFetched])
 })
