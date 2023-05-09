@@ -731,6 +731,11 @@ app.get('/api/:quoteID', (req,res)=>{
     }
 })
 
+app.get('/api/random', (req,res)=>{
+    const random = Math.floor(Math.random() * 117) + 1
+    res.json(quotes[random])
+})
+
 app.get('/docs', (req, res) => {
     res.sendFile(__dirname + '/docs.html')
 })
