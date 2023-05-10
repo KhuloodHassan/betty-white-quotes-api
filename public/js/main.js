@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const data = await res.json()
     quote.textContent = `"${data.quote}"`
     author.textContent = `-${data.author}`
-    console.log(data)
 })
 
 random.addEventListener('click', async () => {

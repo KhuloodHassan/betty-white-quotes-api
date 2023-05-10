@@ -48,14 +48,14 @@
 
 /* Index */
 
-body {
+/* body {
     max-width: 1200px;
     margin: 0 auto;
 }
 
 main {
     text-align: center;
-}
+} */
 
 .index-main img {
     width: 50%;
@@ -75,16 +75,16 @@ strong {
     font-size: 2rem;
 }
 
-h1 {
+/* h1 {
     --font-weight: 500;
     text-align: center;
-}
+} */
 
 /* Docs */
 
 /* Random */
 
-.random-main img {
+/* .random-main img {
     width: 100%;
-}
+} */
 
