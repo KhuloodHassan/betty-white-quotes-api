@@ -1,0 +1,18 @@
+const random = document.querySelector('.random-quote')
+const quote = document.querySelector('blockquote p')
+const author = document.querySelector('blockquote footer')
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const res = await fetch('https://bettywhite.cyclic.app/api/random')
+    const data = await res.json()
+    quote.textContent = `"${data.quote}"`
+    author.textContent = `-${data.author}`
+    console.log(data)
+})
+
+random.addEventListener('click', async () => {
+    const res = await fetch('https://bettywhite.cyclic.app/api/random')
+    const data = await res.json()
+    quote.textContent = `"${data.quote}"`
+    author.textContent = `-${data.author}`
+})
