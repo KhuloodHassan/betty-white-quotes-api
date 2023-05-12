@@ -75,6 +75,10 @@ i:hover {
     margin-right: 1rem;
 }
 
+pre {
+    margin-bottom: var(--typography-spacing-vertical);
+}
+
 /* Index Page */
 .image-outline {
     width: 50%;
