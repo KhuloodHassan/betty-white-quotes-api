@@ -728,6 +728,10 @@ app.get('/docs', (req, res) => {
     res.sendFile(__dirname + '/docs.html')
 })
 
+app.get('/nav', (req, res) => {
+    res.sendFile(__dirname + '/nav.html')
+})
+
 app.get('/api/all', (req, res) => {
     res.json(quotes);
 })

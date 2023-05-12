@@ -10,6 +10,9 @@
         <title>Betty White Quotes Documentation</title>
         <link rel="icon" type="image/x-icon" href="">
 
+        <!-- External Sheets -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
         <!-- External stylesheets -->
         <link rel="stylesheet" href="css/pico.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -19,12 +22,12 @@
         <div class="container">
             <nav>
                 <ul>
-                  <li><strong>Betty White</strong></li>
+                    <li><strong>Betty White</strong></li>
                 </ul>
                 <ul>
-                  <li><a href="/">About</a></li>
-                  <li><a href="/random">Random Quote</a></li>
-                  <li><a href="/docs">Docs</a></li>
+                    <li class="mr-2"><a href="/"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a></li>
+                    <li class="mr-2"><a href="/random"><i class="fa fa-quote-right fa-3x" aria-hidden="true"></i></a></li>
+                    <li><a href="/docs"><i class="fa fa-file-text fa-2x" aria-hidden="true"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -40,9 +43,21 @@
     <section>
         <div class="container">
             <h2>Calling the API</h2>
+
             <h3>Authentication</h3>
             <p>No authentication is required to use the Betty White Quotes API.</p>
+
             <h3>API response format</h3>
+
+            <pre>
+                <code>
+                    {
+                        "author": "Betty White",
+                        "tag": "Humor",
+                        "quote": "I'm a health nut. My favorite food is hot dogs with French fries. And my exercise: I have a two-story house and a very bad memory, so I'm up and down those stairs."
+                    }
+                </code>
+            </pre>
         </div>
     </section>
     
@@ -67,25 +82,15 @@
             <p>
                 <code>GET https://bettywhite.cyclic.app/api/all</code> fetch all quotes.
             </p>
-            <h3>Quote Output</h3>
-            <pre>
-                <code>
-                    {
-                        "author": "Betty White",
-                        "tag": "Humor",
-                        "quote": "I'm a health nut. My favorite food is hot dogs with French fries. And my exercise: I have a two-story house and a very bad memory, so I'm up and down those stairs."
-                    }
-                </code>
-            </pre>
         </div>
     </section>
 
-    <section>
+    <!-- <section>
         <div class="container">
             <h2>Rate Limiting</h2>
             <p>To prevent abuse, the API is rate-limited to 10 requests per minute per IP address. If you exceed this limit, you will receive a 429 Too Many Requests error.</p>
         </div>
-    </section>
+    </section> -->
 
     <section>
         <div class="container">

@@ -63,8 +63,19 @@ body {
     align-content: center;
 }
 
-/* Index */
+i {
+    color: var(--primary);
+}
 
+i:hover {
+    color: var(--primary-hover);
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+/* Index Page */
 .image-outline {
     width: 50%;
     -webkit-filter: drop-shadow(1px 1px 0 #fff)
@@ -83,15 +94,56 @@ strong {
     font-size: 2rem;
 }
 
-/* Random */
-
+/* Random Page */
 button{
     width: fit-content;
     margin: 0 auto;
 }
 
-/* Docs */
+/* Docs Page */
 pre, code {
     white-space: pre-line;
     padding-inline: calc(var(--spacing) * 5);
+}
+
+h1 { /**/
+    --typography-spacing-vertical: 2rem;
+}
+  
+h2 {/*87.5*/
+    --typography-spacing-vertical: 1.75rem;
+}
+  
+h3 {/*75*/
+    --typography-spacing-vertical: 1.5rem;
+}
+  
+h4 {/*62.5*/
+    --typography-spacing-vertical: 1.25rem;
+}
+  
+h5 {/*56.25*/
+    --typography-spacing-vertical: 1.125rem;
+}
+
+/* Hamburger Menu */
+
+
+/* Media Queries */
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 1200px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 1200px
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 1200px
+    }
 }
