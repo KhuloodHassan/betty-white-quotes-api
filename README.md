@@ -6,7 +6,7 @@ Betty White Quotes API, as the name suggests, is an API that provides provides a
 ## Demo
 
 <p align="center" width="100%">
-    <img src="public/assets/images/betty-white-api-demo.gif" width="70%" alt="Preview gif of the random quotes page showing a random quote being generated on button click"/>
+    <img src="public/assets/images/betty-white-api-demo.gif" width="100%" alt="Preview gif of the random quotes page showing a random quote being generated on button click"/>
 </p>
 
 ## Link to Project
