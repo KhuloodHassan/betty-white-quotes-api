@@ -2,7 +2,7 @@
 # Betty White Quotes API
 
 
-Betty White Quotes API, as the name suggests, is an API that provides provides a collection of memorable quotes from the beloved actress and comedian Betty White. With our API, you can easily access and integrate these quotes into your own projects or applications. This API was built for the [#10DayWebBuild](https://10daywebbuild.netlify.app/) Twitter challenge.
+Betty White Quotes API, as the name suggests, is an API that provides a collection of memorable quotes from the beloved actress and comedian Betty White. With our API, you can easily access and integrate these quotes into your own projects or applications. This API was built for the [#10DayWebBuild](https://10daywebbuild.netlify.app/) Twitter challenge.
 ## Demo
 
 <p align="center" width="100%">
