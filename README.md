@@ -79,9 +79,7 @@ Start the server
 ```bash
   node app.js
 ```
-## Optimizations
 
-What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
 ## Roadmap
 
 - Add an option for users to grab quote by tag
