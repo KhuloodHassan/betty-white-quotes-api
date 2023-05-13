@@ -6,6 +6,7 @@
 :root {
     --font-family: 'Gontserrat Regular';
     --spacing: 0.25rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* Pink Light scheme (Default) */
@@ -46,7 +47,7 @@
     --switch-checked-background-color: var(--primary);
 }
 
-/* Shared */
+
 body {
     padding-inline: calc(var(--spacing) * 5);
 }
@@ -71,15 +72,26 @@ i:hover {
     color: var(--primary-hover);
 }
 
-/* .mr-0\.5 {
-    margin-right: 0.5rem;
-} */
-
 pre {
     margin-bottom: var(--typography-spacing-vertical);
 }
 
-/* Index Page */
+.div-center {
+    margin: 0 auto;
+}
+
+.bt {
+    border-top: 2px solid var(--primary);
+}
+
+.mw-300 {
+    max-width: 300px;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
 .image-outline {
     width: 75%;
     -webkit-filter: drop-shadow(1px 1px 0 #fff)
@@ -98,42 +110,37 @@ strong {
     font-size: 2.2rem;
 }
 
-/* Random Page */
 button{
     width: fit-content;
     margin: 0 auto;
 }
 
-/* Docs Page */
 pre, code {
     white-space: pre-line;
     padding-inline: calc(var(--spacing) * 5);
 }
 
-h1 { /**/
+h1 {
     --typography-spacing-vertical: 2rem;
 }
   
-h2 {/*87.5*/
+h2 {
     --typography-spacing-vertical: 1.75rem;
 }
   
-h3 {/*75*/
+h3 {
     --typography-spacing-vertical: 1.5rem;
 }
   
-h4 {/*62.5*/
+h4 {
     --typography-spacing-vertical: 1.25rem;
 }
   
-h5 {/*56.25*/
+h5 {
     --typography-spacing-vertical: 1.125rem;
 }
 
-/* Hamburger Menu */
 
-
-/* Media Queries */
 @media screen and (min-width: 576px) {
     .container {
         max-width: 1200px
@@ -149,5 +156,9 @@ h5 {/*56.25*/
 @media screen and (min-width: 992px) {
     .container {
         max-width: 1200px
+    }
+
+    .image-outline {
+        width: 60%;
     }
 }
