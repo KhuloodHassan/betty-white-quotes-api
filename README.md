@@ -34,13 +34,13 @@ Betty White Quotes API, as the name suggests, is an API that provides provides a
 
 #### Get random quote
 
-```http
+```bash
   GET /api/random
 ```
 
 #### Get quote by id
 
-```http
+```bash
   GET /api/${id}
 ```
 
@@ -50,12 +50,9 @@ Betty White Quotes API, as the name suggests, is an API that provides provides a
 
 #### Get all items
 
-```http
+```bash
   GET /api/all
 ```
-
-
-
 
 ## Run Locally
 
