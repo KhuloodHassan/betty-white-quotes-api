@@ -14,7 +14,7 @@ Betty White Quotes API, as the name suggests, is an API that provides a collecti
 [Live Preview](https://bettywhite.cyclic.app/)
 ## Tech Stack
 
-**Client:** HTML, Javascript, PicoCSS
+**Client:** HTML, PicoCSS, Javascript
 
 **Server:** Node.js, Express.js
 
@@ -48,7 +48,7 @@ Betty White Quotes API, as the name suggests, is an API that provides a collecti
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-#### Get all items
+#### Get all quotes
 
 ```bash
   GET /api/all
