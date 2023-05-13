@@ -71,9 +71,9 @@ i:hover {
     color: var(--primary-hover);
 }
 
-.mr-1 {
-    margin-right: 1rem;
-}
+/* .mr-0\.5 {
+    margin-right: 0.5rem;
+} */
 
 pre {
     margin-bottom: var(--typography-spacing-vertical);
@@ -81,7 +81,7 @@ pre {
 
 /* Index Page */
 .image-outline {
-    width: 50%;
+    width: 75%;
     -webkit-filter: drop-shadow(1px 1px 0 #fff)
                     drop-shadow(-1px 1px 0 #fff)
                     drop-shadow(1px -1px 0 #fff)
