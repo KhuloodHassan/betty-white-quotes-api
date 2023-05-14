@@ -2,7 +2,7 @@
   "name": "betty-white-quotes-api",
   "version": "1.0.0",
   "description": "A simple API that generates Betty White quotes.",
-  "main": "app.js",
+  "main": "config/app.js",
   "scripts": {
     "dev": "nodemon app.js"
   },
